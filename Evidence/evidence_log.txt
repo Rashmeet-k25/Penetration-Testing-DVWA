@@ -1,0 +1,120 @@
+===========================================
+Evidence Log
+Project: DVWA SQL Injection Assessment
+Tester: Rashmeet Kaur
+===========================================
+
+E-001
+DVWA Login Page
+
+Purpose:
+Verified application accessibility.
+
+-------------------------------------------
+
+E-002
+Apache Running
+
+Purpose:
+Verified web server was operational.
+
+-------------------------------------------
+
+E-003
+Database Running
+
+Purpose:
+Verified MariaDB/MySQL service was active.
+
+-------------------------------------------
+
+E-004
+DVWA Database Setup
+
+Purpose:
+Verified successful database configuration.
+
+-------------------------------------------
+
+E-005
+DVWA Security Level (Low)
+
+Purpose:
+Configured the application for initial vulnerability assessment.
+
+-------------------------------------------
+
+E-006
+Burp Suite Startup
+
+Purpose:
+Prepared HTTP interception environment.
+
+-------------------------------------------
+
+E-007
+Burp Intercept Working
+
+Purpose:
+Confirmed requests could be captured and analyzed.
+
+-------------------------------------------
+
+E-008
+SQL Injection Module
+
+Purpose:
+Confirmed the target page for testing.
+
+-------------------------------------------
+
+E-009
+Baseline Application Response
+
+Purpose:
+Observed normal behavior before security testing.
+
+-------------------------------------------
+
+E-010
+SQL Syntax Error Disclosure
+
+Purpose:
+Application displayed a MariaDB SQL syntax error after processing malformed user input, indicating improper input handling and verbose error disclosure.
+
+Evidence:
+Fatal mysqli_sql_exception displayed to the user.
+
+-------------------------------------------
+
+E-011
+Successful SQL Injection Validation
+
+Purpose:
+Confirmed that SQL Injection affected backend query execution.
+
+-------------------------------------------
+
+E-012
+Database Information Disclosure
+
+Purpose:
+Retrieved database version and current database information during testing.
+
+-------------------------------------------
+
+E-013
+Database Schema Enumeration
+
+Purpose:
+Identified database schema, available tables, and columns.
+
+-------------------------------------------
+
+E-014
+User Data Disclosure
+
+Purpose:
+Demonstrated exposure of application data through SQL Injection.
+
+===========================================
