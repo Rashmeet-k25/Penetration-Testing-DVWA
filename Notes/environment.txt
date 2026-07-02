@@ -1,0 +1,17 @@
+Operating System:
+Kali Linux
+
+Web Server:
+Apache
+
+Database:
+MariaDB / MySQL
+
+Application:
+DVWA
+
+Browser:
+Firefox
+
+Testing Tool:
+Burp Suite Community

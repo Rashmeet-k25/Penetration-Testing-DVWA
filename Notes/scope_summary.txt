@@ -1,0 +1,23 @@
+Scope Summary
+
+Application:
+DVWA
+
+Module:
+SQL Injection
+
+Environment:
+Local Kali Linux Lab
+
+Risk Level:
+Controlled Lab
+
+Testing Tools:
+Firefox
+Burp Suite
+DVWA
+Apache
+MariaDB
+
+Status:
+Ready for Assessment

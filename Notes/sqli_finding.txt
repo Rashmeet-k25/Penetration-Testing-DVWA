@@ -1,0 +1,125 @@
+=========================================
+SQL Injection Finding
+=========================================
+
+Finding ID:
+F-001
+
+Title:
+SQL Injection
+
+Application:
+DVWA
+
+Module:
+SQL Injection
+
+Parameter:
+id
+
+HTTP Method:
+GET
+
+Severity:
+High
+
+OWASP Category:
+A03:2021 - Injection
+
+CWE:
+CWE-89
+
+Status:
+Confirmed
+
+-----------------------------------------
+
+Description
+
+The DVWA SQL Injection module accepts user-controlled input through the "id" parameter without sufficient input validation.
+
+Testing confirmed that the supplied input directly influenced backend SQL query execution.
+
+During assessment, malformed input generated verbose MariaDB SQL error messages revealing internal implementation details including:
+
+- Database engine (MariaDB)
+- PHP mysqli function
+- Internal file path
+- Source file
+- Line number
+
+Further testing successfully demonstrated retrieval of backend database information including:
+
+• Database version
+
+• Current database
+
+• Database schema
+
+• Available tables
+
+• Table columns
+
+• User-related records
+
+These observations confirm the existence of a High Severity SQL Injection vulnerability.
+
+-----------------------------------------
+
+Observed Evidence
+
+✓ Baseline application response
+
+✓ SQL syntax error disclosure
+
+✓ Successful SQL Injection validation
+
+✓ Database version disclosure
+
+✓ Current database identification
+
+✓ Database enumeration
+
+✓ Table enumeration
+
+✓ Column enumeration
+
+✓ User information disclosure
+
+-----------------------------------------
+
+Potential Impact
+
+- Unauthorized access to database information
+
+- Disclosure of sensitive application data
+
+- Database schema enumeration
+
+- Information leakage through verbose SQL errors
+
+- Increased risk of further compromise
+
+-----------------------------------------
+
+Recommended Remediation
+
+- Use prepared statements
+
+- Implement parameterized SQL queries
+
+- Validate all user input
+
+- Disable verbose database error messages
+
+- Apply least-privilege database permissions
+
+-----------------------------------------
+
+Finding Status
+
+Confirmed
+
+Risk Rating
+
+High

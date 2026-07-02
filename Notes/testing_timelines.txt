@@ -1,0 +1,49 @@
+==================================
+
+Testing Timeline
+
+==================================
+
+09:00
+Started DVWA assessment.
+
+09:05
+Opened SQL Injection module.
+
+09:10
+Observed baseline application response.
+
+09:15
+Captured HTTP request using Burp Suite.
+
+09:20
+Identified vulnerable "id" parameter.
+
+09:30
+Confirmed SQL Injection behavior.
+
+09:40
+Retrieved database version information.
+
+09:45
+Identified current database.
+
+09:50
+Enumerated available databases.
+
+10:00
+Enumerated database tables.
+
+10:10
+Enumerated table columns.
+
+10:20
+Retrieved user-related information.
+
+10:30
+Collected screenshots and evidence.
+
+10:40
+Documented findings.
+
+Assessment Complete.

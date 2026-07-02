@@ -1,0 +1,41 @@
+======================================
+SQL Injection Kill Chain
+======================================
+
+Reconnaissance
+
+↓
+
+Identify input field
+
+↓
+
+Analyze HTTP request
+
+↓
+
+Discover vulnerable parameter
+
+↓
+
+Submit crafted input
+
+↓
+
+Application executes SQL query
+
+↓
+
+Database returns unintended information
+
+↓
+
+Attacker enumerates database
+
+↓
+
+Sensitive information disclosed
+
+↓
+
+Potential follow-up attacks

@@ -1,0 +1,33 @@
+======================================
+Attack Scenario
+======================================
+
+1. Attacker discovers a web page accepting user input.
+
+↓
+
+2. User input is inserted directly into an SQL query.
+
+↓
+
+3. Application fails to validate input.
+
+↓
+
+4. Database executes the modified SQL query.
+
+↓
+
+5. Sensitive database information is returned.
+
+↓
+
+6. Attacker enumerates database structure.
+
+↓
+
+7. User-related information is disclosed.
+
+↓
+
+8. Information gathered may support additional attacks.

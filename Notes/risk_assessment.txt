@@ -1,0 +1,41 @@
+======================================
+Risk Assessment
+======================================
+
+Finding
+
+SQL Injection
+
+Likelihood
+
+High
+
+Reason
+
+The vulnerable parameter is accessible through the application interface and accepts unsanitized user input.
+
+--------------------------------------
+
+Impact
+
+High
+
+Reason
+
+Attackers can retrieve sensitive database information and enumerate the backend database structure.
+
+--------------------------------------
+
+Overall Risk
+
+High
+
+--------------------------------------
+
+Risk Matrix
+
+Likelihood : High
+
+Impact : High
+
+Overall : High

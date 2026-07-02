@@ -1,0 +1,41 @@
+======================================
+CIA Impact Analysis
+======================================
+
+Confidentiality
+
+High
+
+Reason
+
+Sensitive database information including user records, schema details, database version, and internal implementation details can be disclosed.
+
+--------------------------------------
+
+Integrity
+
+Medium
+
+Reason
+
+In the DVWA lab, testing focused on information retrieval. In a real-world application, SQL Injection could potentially allow unauthorized modification of database records.
+
+--------------------------------------
+
+Availability
+
+Low
+
+Reason
+
+No evidence of service disruption or denial-of-service was observed during testing.
+
+--------------------------------------
+
+Overall CIA Rating
+
+Confidentiality : High
+
+Integrity : Medium
+
+Availability : Low

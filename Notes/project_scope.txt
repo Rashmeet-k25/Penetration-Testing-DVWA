@@ -1,0 +1,29 @@
+Project Name:
+DVWA SQL Injection Assessment
+
+Tester:
+Rashmeet Kaur
+
+Date:
+18 June 2026
+
+Target:
+DVWA Local Instance
+
+Scope:
+- DVWA Web Application
+- SQL Injection Module
+- MySQL Database
+
+Out of Scope:
+- Internet Systems
+- External Websites
+
+Testing Type:
+Authorized Lab Testing
+
+Objective:
+Identify SQL Injection vulnerability,
+assess risk,
+document findings,
+provide remediation.

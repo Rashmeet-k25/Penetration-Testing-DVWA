@@ -1,0 +1,35 @@
+======================================
+Impact Assessment
+======================================
+
+Finding:
+SQL Injection
+
+Severity:
+High
+
+Description
+
+The SQL Injection vulnerability allows user-controlled input to modify backend SQL query execution.
+
+Testing confirmed unauthorized disclosure of database information, including database version, schema, table names, column names, and user-related records.
+
+Potential Impact
+
+• Disclosure of sensitive information
+
+• Unauthorized database access
+
+• Database structure exposure
+
+• Increased attack surface
+
+• Information disclosure through verbose SQL errors
+
+Overall Impact
+
+High
+
+Reason
+
+The vulnerability directly affects database confidentiality and may allow attackers to gather information for further attacks.

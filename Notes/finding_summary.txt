@@ -1,0 +1,96 @@
+=========================================
+Finding Summary
+=========================================
+
+Project:
+DVWA Web Application Penetration Test
+
+Finding:
+SQL Injection
+
+Severity:
+High
+
+Status:
+Confirmed
+
+-----------------------------------------
+
+Summary
+
+A web application penetration test was performed against the DVWA SQL Injection module within an authorized laboratory environment.
+
+Testing identified a High Severity SQL Injection vulnerability affecting the "id" parameter.
+
+The application accepted unsanitized user input and processed it directly in backend SQL queries.
+
+During testing, malformed input generated verbose MariaDB error messages exposing backend implementation details such as database type, PHP functions, file paths, and source code line numbers.
+
+Further validation confirmed that SQL Injection allowed unauthorized retrieval of backend database information including:
+
+• Database version
+
+• Current database
+
+• Database schema
+
+• Table names
+
+• Column names
+
+• User-related information
+
+The vulnerability demonstrates insufficient input validation and insecure database query handling.
+
+-----------------------------------------
+
+Risk Assessment
+
+Likelihood:
+High
+
+Impact:
+High
+
+Overall Risk:
+High
+
+-----------------------------------------
+
+Business Impact
+
+An attacker exploiting this vulnerability could gain unauthorized access to sensitive database information, enumerate the database structure, and expose confidential application data. Such disclosure may result in reputational damage, regulatory issues, and financial loss.
+
+-----------------------------------------
+
+Recommended Remediation
+
+• Use prepared statements and parameterized queries.
+
+• Validate and sanitize all user input.
+
+• Disable verbose SQL error messages.
+
+• Apply least-privilege database permissions.
+
+• Conduct regular secure code reviews and penetration testing.
+
+-----------------------------------------
+
+References
+
+OWASP Top 10 2021
+A03: Injection
+
+CWE-89
+Improper Neutralization of Special Elements used in an SQL Command
+
+-----------------------------------------
+
+Finding Status
+
+Confirmed
+
+Overall Rating
+
+High
